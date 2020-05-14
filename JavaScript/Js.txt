@@ -1,0 +1,166 @@
+[+] DATA DECLARATION:
+
+//Comments
+//inline comment
+/*Multiple line 
+comments*/ 
+
+
+//Data Types and Variables:
+//Available 7 types of Data: String, number, boolean, object, undefiened, symbol and null
+
+//declaring a variable with a datatype String
+//the variable can be assigned by 3 ways: var, let, const
+//differneces b/w the 3
+//var can be used in whole program
+//let accessable only within the particular scope
+//const varibale that can never change
+var myName = "damnedsec";
+let ourName = "cyberwr3nch";
+const pi = 3.14;
+
+
+[+] VARIABLES OPERATION:
+
+//Assigning Variables
+
+var a; //declaring a variable
+var b = 2; //declaring and assigning variable
+//console.log(a)  //results null since no value is declared
+//console.log(b)  //prints value of b
+a = 7; //assingning a to 7
+b = a; //assinging value of a to a
+//console.log(a)  //results 7 as the value is assigned
+//console.log(b)  //results 7 as the value of a is assigned to b
+
+//Initailzing variables
+var a1 = 9; //initialized variable
+
+//unInitializd varibales
+
+//Altered State   //previous state
+var a2 = 5;         //var a;
+var b1 = 10;        //var b; 
+var c = "I am a ";   //var c;
+
+a2 = a2 + 1; //ans = 6
+b1 = b1 + 5; //ans = 15 
+c = c + "String" //and = I am a String
+//console.log([a2,b1,c])
+//The console.log () prints the output
+//if [] is passed the ouptut will be displayed in a list foramt `console.log([a,b,c])`
+//if {} is passed the output will be displayed in a dict format key and value `console.log({a,b,c})
+//if nothing is passed the output will be displayed in a simple format `console.log(a,b,c)`
+
+//Case Sensitivity Variables
+//console.log("Variables are case sensitive");
+
+
+[+] ARITHMETIC OPERATIONS:
+
+//Arithmetic Operations on Numbers
+
+var sum = 10 + 9;
+var differnce = 45 - 33;
+var product = 8 * 9;
+var quotient = 66/33;
+
+
+//Incrementing number
+
+var myVar = 28;
+myVar += 1; //incrementing the value in the variable
+//same as doing myVar = myVar + 1 (or) myVar++;
+//console.log(myVar)
+myVar -= 1; //decrementing the value in the variable
+//same as doing myVar = myVar - 1 (or) myvar--;
+//console.log(myVar) 
+
+
+//Decimal Numbers
+
+var ourDecimal = 5.7;
+var myDecimal = 0.009; //anything that has a . is a decimal point
+
+//Multiply Decimal
+
+var decimalProduct = 2.0 * 2.5;
+//console.log(decimalProduct) //ans = 5
+
+//Divide Decimal
+
+var decimalQuotient = 4.2 /2.0
+
+//finding remainder
+var remainder;
+remainder = 11 % 3 ; //% is the remaineder operator 
+
+
+//Compound Assignment +=, -=, *=, /= 
+
+var a3 = 3; 
+var b3 = 17;
+var c3 = 12;
+a += 12; // a = a+12;
+b += 9;
+c += 7;
+//same goes for subtraction, multiplication and division 
+
+
+[+] STRING OPERATIONS:
+
+//Declaring Variable String
+
+var myFirstName = "damnedsec" ;
+var mySecondName = "cyberwr3nch";
+
+
+//Escapoing Literal Quotes in Strings
+//escaping can be done in three ways: \ (escapr charcter), ' " (quote changing), `` (Using BackTick)
+
+var Str = 'i am a \'superman\' i love loba';
+//console.log(Str)
+var stringTwo = 'i am "Super Boy"';
+//console.log(stringTwo)
+
+
+//Escape Squeneces
+// \n New line \r Carriage return \t tab \b backSpace \f formFeed
+
+var myStrnd = 'First line\n\t\\SecondLine\nThirdLine'
+//console.log(myStrnd)
+
+//Concat Strings with + Operator:
+var exStr = 'I am First.' + "  I am Second !";
+//console.log(exStr)
+
+
+//+= works on Strings to concat too
+
+var exStr2 = "i am first. "
+exStr2 += 'i am second'
+//console.log(exStr2)
+
+//Value substitution in strings
+var OurString = 'damneds3c';
+var testString = 'Hello we are from ' + OurString + ", how are you ?"
+//console.log(testString)
+
+//Appending variables to String
+
+var weKnow = " awesome";
+var weAre = "w3know w3 ar3";
+weAre += weKnow;
+//console.log(weAre)
+
+//Finding Length
+var firstLength = 0;
+var firstThing = 'cyberwr3nch';
+var len = firstThing.length;
+//console.log(len)
+
+//Notation to find first character in the string
+//obtaining characters in a string via its index number
+var test = 'damnedsec';
+var test2 = test[3];
+console.log(test2)  //ans = n since its the 4th character and has the index number 3
