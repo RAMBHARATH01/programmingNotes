@@ -164,3 +164,38 @@ var len = firstThing.length;
 var test = 'damnedsec';
 var test2 = test[3];
 console.log(test2)  //ans = n since its the 4th character and has the index number 3
+
+//specific character of a string can be obtained by strin indexing
+var testString2 = 'cyberwr3nch'
+var test = testString2[3]
+//console.log(test) //prints the 4th character with index value 3
+/*This can also be achieved by calculating the string length and 
+subtrating to get the desired character */
+
+//word blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+	var result = ''
+	result += "The "+" "+ myAdjective +" "+  myNoun + " "+ myVerb + " to the store " + myAdverb;
+	return result;
+}
+
+//console.log(wordBlanks("dog",'big','ran','quickly'));
+//console.log(wordBlanks("bike", 'slow', 'flew', 'slowly'))
+
+//Storing Multiple values in Arrays
+
+var ourArray = ["John", 23];
+//console.log(ourArray [0])
+//nested array
+var nestedArray = [["theUniverse",42],["everything",10101]];
+//console.log(nestedArray[0][0])
+ourArray[1] = 'Chaneged'
+//console.log(ourArray[1])
+nestedArray[0][1] = 'TomMarvoloRiddle'
+//console.log(nestedArray[0][1])
+//the values can be appended to the array via push()
+ourArray.push(['TomMarvoloRiddle','Voldermort'])
+console.log(ourArray)
+
+clear()
+clearHistory()
